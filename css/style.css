@@ -1,0 +1,86 @@
+*{
+  margin: auto;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: left 150% , right -150%;
+    background-repeat: no-repeat, no-repeat;
+    font-size: 14 px;
+    font-family: Kumbh Sans;
+}
+
+#main-container{
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 10px;
+  -webkit-box-shadow: 0px 0px 52px 7px rgba(99, 99, 99, 1);
+  -moz-box-shadow: 0px 0px 52px 7px rgba(99, 99, 99, 1);
+  box-shadow: 0px 0px 52px 7px rgba(99, 99, 99, 1);
+}
+
+.avatar{
+  position: absolute;
+  border-radius: 50%;
+  border: solid white 4px;
+  left: 50%;
+  top: 34%;
+  transform: translate(-50%,-50%);
+}
+
+#top-container{
+  height: 35%;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: auto;
+  width: 100%;
+}
+
+#middle-container{
+  height: 45%;
+  text-align: center;
+}
+#middle-container > h1{
+  margin-top: 45%;
+  float: left;
+}
+
+#bottom-container{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-top-style: solid;
+  border-top-color: lightgrey;
+  border-top-width: thin;
+}
+
+#bottom-container *{
+  flex: 1 1 33%;
+  text-align: center;
+}
+#bottom-container > .att{
+  margin-top: 0;
+}
+#bottom-container > .arr{
+  margin-bottom: 0;
+}
+
+h1, h2{
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+p{
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
